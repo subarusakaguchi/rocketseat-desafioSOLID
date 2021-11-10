@@ -15,7 +15,7 @@ class ListAllUsersController {
 
             return response.json(allUsers);
         } catch (error) {
-            return response.status(400).json({ error: "User not found" });
+            return response.status(400).json({ error: "You are not an Admin" });
         }
     }
 }
